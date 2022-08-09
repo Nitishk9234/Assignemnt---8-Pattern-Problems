@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,ch;
+    for(i=0;i<7;i++)
+    {
+        char ch='A';
+
+        for(j=0;j<7-i;j++)
+        {
+            printf("%c",ch++);
+        }
+       for(j=1;j<(2*i);j++)printf(" ");
+        j=0;
+        if(i==0)
+        {
+           j=1;
+           ch--;
+        }
+
+     for( ;j<7-i;j++)printf("%c",--ch);
+       printf("\n");
+    }
+    return 0;
+}
